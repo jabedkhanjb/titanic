@@ -15,12 +15,14 @@ html{
 .text-right{
     text-align: right;
 }
+/*
 .left{
     float: left;
 }
 .right{
     float: right;
 }
+*/
 img{
     max-width: 100%;
 }
@@ -160,17 +162,71 @@ body,h1,h2,h3,h4,h5,h6,p,li,span{
     width: 200px;
 
 }
+.computer{
+    color: #fafafa;
+    font-size: 25px;
+}
+.mobile{
+    color: #fafafa;
+    font-size: 25px;
+}
+h4{
+    display: inline-block;
+}
+.movietop{
+    padding: 50px 10px 100px 10px;
+}
+body{
+    animation-name: colorchange;
+background-color: #1e3336;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+    0%   {background-color: #1e3336;}
+  25%  {background-color: rgb(41, 81, 192);}
+  50%  {background-color: aqua;}
+  100% {background-color: plum;}
+}
 
-
+/*Movie slide*/
+.leftrightmovie{
+    
+}
+.rightmovie{
+    float: right;
+}
+.lefttextmovie{
+    
+    float: left;
+    padding: 10px 0 10px 230px;
+    font-size: larger;
+    color: white;
+}
+.righttextmovie{
+    padding: 10px 160px 10px 0px;
+    float: right;
+    font-size: larger;
+    color: white;
+    
+}
 /* footer */
 .footer{
     background: #1e3336;
     color: #fafafa;
     padding: 10px 0;
+    animation-name: footer;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes footer{
+   from {background-color: black;}
+   to {background-color: blueviolet;}
 }
 .footer-left{
 float: left;
-width: 40%;
+width: 30%;
+padding-left: 30px;
 }
 .footer-right{
 float: right;
