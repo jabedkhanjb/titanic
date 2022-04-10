@@ -210,6 +210,19 @@ animation-iteration-count: infinite;
     color: white;
     
 }
+iframe{
+    animation-name: borderanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border: 2px solid red;
+}
+@keyframes borderanimation{
+    0%   {border:2px solid rgb(235, 232, 232); left:0px; top:100px;}
+  25%  {border:2px solid rgb(51, 255, 0); left:200px; top:0px;}
+  50%  {border:2px solid rgb(216, 240, 7); left:200px; top:200px;}
+  75%  {border:2px solid rgb(230, 16, 230); left:0px; top:200px;}
+  100% {border:2px solid rgb(18, 189, 32); left:0px; top:0px;}
+}
 /* footer */
 .footer{
     background: #1e3336;
